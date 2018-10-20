@@ -8,7 +8,7 @@ def index(request):
 	all_portfolio = Portfolio.objects.all()
 	context = {
 		'all_portfolio' : all_portfolio,
-		'all_services' : all_services,
+		'all_services' : all_services
 	}
 	return render(request, 'proj/index.html', context)
 
